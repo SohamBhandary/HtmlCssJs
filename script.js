@@ -32,9 +32,9 @@ ScrollTrigger.refresh();
 init()
 var crsr=document.querySelector(".cursor")
 var main=document.querySelector(".main")
-main.addEventListener("mousemove",function(dets){
-   crsr.style.left=dets.x+"px"
-    crsr.style.top=dets.y+"px"
+document.addEventListener("mousemove",function(dets){
+   crsr.style.left=dets.x+20+"px"
+    crsr.style.top=dets.y+20+"px"
 })
 var tl=gsap.timeline({
     scrollTrigger:{
@@ -82,5 +82,36 @@ var tl3 = gsap.timeline({
 
 tl3.to(".main",{
     backgroundColor:"#0F0D0D"
+})
+var boxes=document.querySelectorAll(".box")
+boxes.forEach(function(elem){
+    elem.addEventListener("mouseenter",function(){
+        var att=elem.getAttribute("data-image")
+        crsr.style.width="400px"
+        crsr.style.height="370px"
+        crsr.style.borderRadius="0"
+        crsr.style.backgroundImage=`url(${att})`
+    })
+    elem.addEventListener("mouseleave",function(){
+        elem.style.backgroundColor="transparent"
+        crsr.style.width="20px"
+        crsr.style.height="20px"
+        crsr.style.borderRadius="50%"
+        crsr.style.backgroundImage=`none`
+    })
+
+})
+var h4=document.querySelectorAll("#nav h4")
+h4.forEach(function(elem){
+    var purple=document.querySelector("#purple")
+    elem.addEventListener("mouseenter",function(){
+        purple.style.display="block"
+        purple.style.opacity="1"
+    })
+    elem.addEventListener("mouseleave",function(){
+        purple.style.display="none"
+        purple.style.opacity="0"
+    })
+
 })
 

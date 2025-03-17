@@ -18,26 +18,45 @@ html, body {
     background-color: #edbfff;
     z-index: 9;
     mix-blend-mode: difference;
-    transition: left linear 0.1s top linear 0.1s;
+    transition: background-image ease 0.5s;
+    background-position: center;
+    background-size:cover;
+
+}
+#purple{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 100;
+    background-color:#edbfff ;
+    opacity: 0;
+    display: none;
+    transition: opacity ease 1s;
 }
 .main{
     background-color: #0f0d0d;
-
+cursor: none;
 }
 .page1{
     min-height: 100vh;
     width: 100%;
     z-index: 8;
     position: relative;
+    padding-top: 11vw;
    
 }
+
 #nav{height: 55px;
 width: 100%;
-background-color: #0f0d0d;
+background-color: black;
 display: flex;
 align-items: center;
 justify-content: space-between;
 padding: 0px 30px;
+position: fixed;
+mix-blend-mode: difference;
+z-index: 102;
 
 
 }
@@ -70,7 +89,7 @@ padding: 0px 30px;
     font-size: 7vw;
     font-family: PP mori;
     font-weight: 300;
-    margin-top: 11vw;
+ 
     margin-left: 6vw;
 }
 .page1 h2{
@@ -256,3 +275,24 @@ footer{
     width: 100%;
     background-color: #0f0d0d;
 }
+footer{    height: 135vh;
+    width: 100%;
+    background-color: #EDBFFF;
+    padding: 150px 120px;}
+    .ft-container1 {
+        display: flex
+    ;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #111;
+        padding-bottom: 140px;
+        margin-right: 50px;
+    }
+    .ft-heading {
+        font-family: PP mori Regular;
+        font-size: clamp(26px, 2.8166vw, 56px);
+        line-height: 1.01;
+        letter-spacing: -0.01em;
+        font-weight: 600;
+        color: #000;
+    }

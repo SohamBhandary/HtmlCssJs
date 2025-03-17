@@ -102,16 +102,16 @@ boxes.forEach(function(elem){
 
 })
 var h4=document.querySelectorAll("#nav h4")
-h4.forEach(function(elem){
-    var purple=document.querySelector("#purple")
-    elem.addEventListener("mouseenter",function(){
-        purple.style.display="block"
-        purple.style.opacity="1"
-    })
-    elem.addEventListener("mouseleave",function(){
-        purple.style.display="none"
-        purple.style.opacity="0"
-    })
+// h4.forEach(function(elem){
+//     var purple=document.querySelector("#purple")
+//     elem.addEventListener("mouseenter",function(){
+//         purple.style.display="block"
+//         purple.style.opacity="1"
+//     })
+//     elem.addEventListener("mouseleave",function(){
+//         purple.style.display="none"
+//         purple.style.opacity="0"
+//     })
 
-})
+// })
 

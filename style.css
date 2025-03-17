@@ -10,6 +10,16 @@ html, body {
     height: 100%;
     width: 100%;
 }
+.cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #edbfff;
+    z-index: 9;
+    mix-blend-mode: difference;
+    transition: left linear 0.1s top linear 0.1s;
+}
 .main{
     background-color: #0f0d0d;
 
@@ -130,6 +140,28 @@ padding: 0px 30px;
     margin-top: 20px;
 }
 .page3{
-    min-height: 100vh;
+    min-height: 150vh;
     width: 100%;
+    position: relative;
+    padding-top: 100px;
+}
+.page3 h1{
+    font-size: 6.5vw;
+    color: #0f0d0d;
+    font-weight: 500;
+    margin-left: 100px;
+}
+.page3-part1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+.page3-part1 img{
+    height: 400px;
+    margin-top: 160px;
+}
+.page3-part1 video{
+    height: 350px;
+    margin-top: 100px;
 }
